@@ -2,18 +2,21 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MainArea from './components/MainArea';
+import TodoInput from './components/TodoInput';
+import TodoList from './components/TodoList';
 
 const App: React.FC = () => {
+
   return (
     <div className="h-full flex flex-col">
-      <Header />
+      <Header/>
       <MainArea>
-        <p>To-do list will go here...</p>
+        <TodoInput/>
+        <TodoList/>
       </MainArea>
-      <Footer />
+      <Footer/>
     </div>
   );
 };
 
 export default App;
-
